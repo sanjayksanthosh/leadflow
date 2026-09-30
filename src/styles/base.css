@@ -1,0 +1,148 @@
+
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root
+{
+  height: 100%;
+}
+
+body
+{
+  margin: 0;
+  background: var(--canvas);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure
+{
+  margin: 0;
+}
+
+h1
+{
+  font-size: 22px;
+  font-weight: 640;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+h2
+{
+  font-size: 16px;
+  font-weight: 620;
+  letter-spacing: -0.01em;
+}
+
+h3
+{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+a
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea
+{
+  font: inherit;
+  color: inherit;
+}
+
+button
+{
+  cursor: pointer;
+}
+
+ul,
+ol
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+table
+{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+:focus-visible
+{
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--r-xs);
+}
+
+::selection
+{
+  background: var(--accent-soft);
+}
+
+.tnum
+{
+  font-variant-numeric: tabular-nums;
+}
+
+.muted
+{
+  color: var(--text-2);
+}
+
+.faint
+{
+  color: var(--text-3);
+}
+
+.truncate
+{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.row
+{
+  display: flex;
+  align-items: center;
+}
+
+.spacer
+{
+  flex: 1;
+}
+
+@media (prefers-reduced-motion: reduce)
+{
+  *,
+  *::before,
+  *::after
+{
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+}
+}
