@@ -3,13 +3,15 @@
 Shared lead tracking for a 3-partner business. React + TypeScript + Vite, data in
 `localStorage`, no backend.
 
+**Live demo:** https://leadflow-seven-sepia.vercel.app
+
 ## Run it
 
 ```bash
 npm install
 npm run dev      # http://localhost:5173
 npm run build    # typecheck + production bundle into dist/
-npm run smoke    # real Chrome, 35 checks (needs npm run build first)
+npm run smoke    # real Chrome, 37 checks (needs npm run build first)
 ```
 
 ## Using it
@@ -31,6 +33,12 @@ The status column is a dropdown, so a status changes straight from the list with
 opening the lead. Logging a contact is the main action: it records who, when, how, the
 response, the next action and the follow-up date, and derives the status from the
 response.
+
+## Screenshots
+
+| Dashboard | Lead details | Mobile |
+| --- | --- | --- |
+| ![Dashboard](docs/screenshots/dashboard.png) | ![Lead details](docs/screenshots/lead-details.png) | ![Mobile leads](docs/screenshots/mobile-leads.png) |
 
 ## Layout
 
@@ -58,3 +66,8 @@ Everything goes through the store's reducer, and reads go through `lib/selectors
 
 The layout is built for phones first: single column, bottom nav, drawer, full-width
 tap targets, and the leads table turns into stacked cards with field labels under 720px.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
