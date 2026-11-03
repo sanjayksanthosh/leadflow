@@ -34,6 +34,12 @@ opening the lead. Logging a contact is the main action: it records who, when, ho
 response, the next action and the follow-up date, and derives the status from the
 response.
 
+## Demo video
+
+<video src="https://raw.githubusercontent.com/sanjayksanthosh/leadflow/master/docs/video/leadflow-brag.mp4" poster="https://raw.githubusercontent.com/sanjayksanthosh/leadflow/master/docs/video/leadflow-brag.jpg" controls width="100%"></video>
+
+[Download the MP4](docs/video/leadflow-brag.mp4) Â· [Poster](docs/video/leadflow-brag.jpg)
+
 ## Screenshots
 
 | Dashboard | Lead details | Mobile |
@@ -69,5 +75,5 @@ tap targets, and the leads table turns into stacked cards with field labels unde
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT ï¿½ see [LICENSE](LICENSE).
 
